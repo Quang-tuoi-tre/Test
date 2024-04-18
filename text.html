@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Ứng Tuyển</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+
+<form id="applicationForm">
+  <label for="fullName">Họ và Tên:</label><br>
+  <input type="text" id="fullName" name="fullName" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="phoneNumber">Số điện thoại:</label><br>
+  <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+  <input type="submit" value="Ứng Tuyển">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
